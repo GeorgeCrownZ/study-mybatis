@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace => 绑定一个对应的 Dao/Mapper 接口 -->
+<mapper namespace="com.zc.dao.UserMapper">
+    <!-- 结果集映射 -->
+    <resultMap id="UserMap" type="User">
+        <!--column对应数据库中的字段，property对应实体类中的属性-->
+        <result column="id" property="id" />
+        <result column="name" property="name" />
+        <result column="password" property="pwd" />
+    </resultMap>
+</mapper>
